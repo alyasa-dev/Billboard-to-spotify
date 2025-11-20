@@ -1,48 +1,57 @@
-# 🎵 Billboard → Spotify Playlist Maker
+# Billboard Hot 100 → Spotify Playlist Generator
 
-This **Python script** takes a Billboard Hot 100 chart from any date you choose and automatically creates a matching Spotify playlist for you.  
-Yes, it’s basically a **time machine for vibes**.
+This project automatically creates a Spotify playlist based on the Billboard Hot 100 chart for any date. Enter a date, and the script retrieves that week's chart, matches each track to Spotify, and builds a private playlist in your account.
 
----
+## Features
+- Fetches the Billboard Hot 100 for a specified date
+- Searches Spotify and matches each track to its corresponding song
+- Automatically creates a private Spotify playlist populated with all matched tracks
+- Fully automated workflow using the Spotify Web API
 
-## 💡 What it does
+## Technology Overview
+- **Python 3**
+- **Requests / BeautifulSoup** for Billboard chart scraping  
+- **Spotipy (Spotify Web API wrapper)** for playlist creation and track search  
+- **dotenv** for environment variable management
 
-- Enter a date (like `2010-05-20`)  
-- Scrapes the **Billboard Hot 100** songs from that week  
-- Searches Spotify for each song  
-- Creates a **private Spotify playlist** with those songs  
+## Setup Instructions
 
-**Boom. Nostalgia playlist.**
+### 1. Clone the repository
+```bash
+git clone <your-repo-url>
+cd <project-folder> 
+```
+### 2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+### 3. Configure your Spotify credentials
+Create a .env file in the project root with:
+```
+SPOTIFY_CLIENT_ID=your_client_id
+SPOTIFY_CLIENT_SECRET=your_client_secret
+```
+You can obtain these by creating a Spotify Developer App.
+### 4. Run the script
+```bash
+python main.py
+```
+Enter a Billboard chart date (format: YYYY-MM-DD) and the playlist will be generated automatically.
+```
+Project Structure
+main.py          # Core script
+README.md        # Project documentation
+.gitignore       # Prevents sensitive files from being committed
+LICENSE          # Open-source license
+```
+## Notes
 
----
+- .env and token.txt are intentionally excluded via .gitignore.
 
-## 🚀 How to use it
+- Spotify authentication requires your own client credentials.
 
-1. **Clone or download the repo**  
-2. **Install the requirements**  
+- Playlists are created as private by default.
 
+## License
 
-<pre>pip install -r requirements.txt</pre>
-3. **Create a .env file** (keep it private!) and add your Spotify credentials:
-<pre>SPOTIFY_CLIENT_ID=your_id_here
-SPOTIFY_CLIENT_SECRET=your_secret_here</pre>
-4. **Run the script**
-<pre>python main.py</pre>
-5. Enter a date and watch Spotify do its magic! 🎉
-
-## ⚠️ Important
-
-- Don’t upload your .env or token.txt — they’re in .gitignore already.
-
-- The script won’t run unless you create your own Spotify dev app and put your keys in .env.
-
-## 📁 Files in the repo
-
-- main.py — the full project
-
-- .gitignore — keeps your secrets safe
-
-- README.md — this file
-
-- LICENSE — standard open-source license
-
+This project is released under the MIT License.
