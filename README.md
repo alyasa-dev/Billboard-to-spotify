@@ -5,6 +5,7 @@ Generate a Spotify playlist from any Billboard Hot 100 chart with a single comma
 ## How it looks like in the Terminal Output:
 <img width="1766" height="191" alt="image" src="https://github.com/user-attachments/assets/0a1fa67e-01e2-466f-a761-34cdbb36fd0f" />
 ## How it looks like in spotify:
+<img width="950" height="727" alt="image" src="https://github.com/user-attachments/assets/4fc92c3c-2f10-4e4d-bf7d-47d3ebfb5de4" />
 
 
 
@@ -48,6 +49,7 @@ Create a `.env` file in the project root:
 ```
 SPOTIFY_CLIENT_ID=your_client_id
 SPOTIFY_CLIENT_SECRET=your_client_secret
+YOUR_REDIRECT_URI = "http://127.0.0.1:8080/callback"
 ```
 ### 4. Run the script
 ```bash
