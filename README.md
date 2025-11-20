@@ -67,7 +67,8 @@ Enter a date in the format `YYYY-MM-DD` and the playlist will be created.
 ├── README.md        # Project documentation
 ├── requirements.txt # Dependencies
 ├── LICENSE          # MIT License
-└── .gitignore       # Excludes environment and token files
+├── .gitignore       # Excludes environment and token files
+└── .env.example        # template for environment variables
 ```
 Notes
 
