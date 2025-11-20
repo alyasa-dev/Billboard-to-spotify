@@ -53,7 +53,7 @@ Create a `.env` file in the project root:
 ```
 SPOTIFY_CLIENT_ID=your_client_id
 SPOTIFY_CLIENT_SECRET=your_client_secret
-YOUR_REDIRECT_URI = "http://127.0.0.1:8080/callback"
+REDIRECT_URI = YOUR_REDIRECT_URI
 ```
 ### 4. Run the script
 ```bash
