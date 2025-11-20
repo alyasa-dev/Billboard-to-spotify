@@ -56,7 +56,7 @@ for song in songs:
         print(f"Error searching for {song}: {e}")
 
 # Create playlist
-playlist_name = f"{date} Billboard 100"
+playlist_name = f"“Billboard Hot 100 – {date}"
 playlist = sp.user_playlist_create(
     user=user_id,
     name=playlist_name,
@@ -67,4 +67,5 @@ playlist = sp.user_playlist_create(
 # Add songs
 sp.playlist_add_items(playlist['id'], song_uris)
 print(f"Playlist '{playlist_name}' created with {len(song_uris)} songs!")
+
 
