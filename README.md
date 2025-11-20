@@ -20,4 +20,4 @@ Boom. Nostalgia playlist.
 Clone or download the repo
 
 Install the requirements:
-<pre> ```bash # Install the dependencies pip install -r requirements.txt # Run the main script python main.py ``` </pre>
+<pre>Install the dependencies pip install -r requirements.txt # Run the main script python main.py  </pre>
