@@ -11,7 +11,7 @@ load_dotenv()
 # Spotify credentials from .env
 CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
 CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
-REDIRECT_URI = "http://127.0.0.1:8080/callback"
+REDIRECT_URI = os.getenv("YOUR_REDIRECT_URI")
 SCOPE = "playlist-modify-private"
 
 # Ask for date input
@@ -67,3 +67,4 @@ playlist = sp.user_playlist_create(
 # Add songs
 sp.playlist_add_items(playlist['id'], song_uris)
 print(f"Playlist '{playlist_name}' created with {len(song_uris)} songs!")
+
