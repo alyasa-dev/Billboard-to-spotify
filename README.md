@@ -2,7 +2,11 @@
 
 Generate a Spotify playlist from any Billboard Hot 100 chart with a single command. Choose a date, and the script retrieves that week’s chart, matches each track to Spotify, and creates a private playlist in your account.
 
-![demo screenshot or GIF goes here]
+## How it looks like in the Terminal Output:
+<img width="1766" height="191" alt="image" src="https://github.com/user-attachments/assets/0a1fa67e-01e2-466f-a761-34cdbb36fd0f" />
+## How it looks like in spotify:
+
+
 
 ## Features
 
