@@ -21,5 +21,6 @@ Yes, it’s basically a **time machine for vibes**.
 1. **Clone or download the repo**  
 2. **Install the requirements**  
 
-```bash
-pip install -r requirements.txt
+
+<pre>pip install -r requirements.txt</pre>
+
